@@ -6,11 +6,10 @@
 #    By: tchaves <tchaves@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/08/17 10:41:14 by tchaves           #+#    #+#              #
-#    Updated: 2023/10/17 18:44:16 by tchaves          ###   ########.fr        #
+#    Updated: 2023/10/18 18:43:57 by tchaves          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME = libft.a
 
 SRCS    = ft_isascii.c ft_isprint.c ft_isalpha.c ft_isdigit.c ft_isalnum.c \
             ft_tolower.c ft_toupper.c ft_strlen.c ft_strlcpy.c ft_strlcat.c \
@@ -24,19 +23,18 @@ SRCS    = ft_isascii.c ft_isprint.c ft_isalpha.c ft_isdigit.c ft_isalnum.c \
 OBJS = $(SRCS:.c=.o)
 
 CC = gcc
-
 RM = rm -f
-
 CFLAGS = -Wall -Wextra -Werror -I.
 
-$(NAME) : $(OBJS)
-	ar rc ${NAME} ${OBJS}
-	ranlib ${NAME}
-
-.c.o:
-	$(CC) ${CFLAGS} -c $< -o ${<:.c=.o}
+NAME = libft.a
 
 all : ${NAME}
+
+$(NAME) : $(OBJS)
+	ar rcs ${NAME} ${OBJS}
+	
+.c.o:
+	$(CC) ${CFLAGS} -c $< -o ${<:.c=.o}
 
 clean :
 	$(RM) $(OBJS)
@@ -44,6 +42,6 @@ clean :
 fclean : clean
 	$(RM) $(NAME)
 	
-re : fclean all
+re : fclean ${NAME}
 
 .PHONY: all clean re fclean
