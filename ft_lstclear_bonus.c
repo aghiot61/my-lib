@@ -1,31 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isalnum.c                                       :+:      :+:    :+:   */
+/*   ft_lstclear_bonus.c                                :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: tchaves <tchaves@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/10 13:58:23 by tchaves           #+#    #+#             */
-/*   Updated: 2023/10/23 11:17:18 by tchaves          ###   ########.fr       */
+/*   Created: 2023/10/24 16:58:11 by tchaves           #+#    #+#             */
+/*   Updated: 2023/10/24 16:58:13 by tchaves          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_isalnum(int c)
+#include "libft.h"
+
+void	ft_lstclear(t_list **lst, void (*del)(void *))
 {
-	if ((c >= 48 && c <= 57) || (c >= 65 && c <= 90)
-		|| (c >= 97 && c <= 122))
+	t_list	*aux;
+
+	if (!lst)
+		return ;
+	while ((*lst) != NULL)
 	{
-		return (8);
-	}
-	else
-	{
-		return (0);
+		aux = (*lst)->next;
+		ft_lstdelone(*lst, del);
+		*lst = aux;
 	}
 }
-
-/*#include <ctype.h>
-int	main()
-{
-	printf("%d\n", ft_isalnum(67));
-	printf("%d", isalnum(48));
-}*/
