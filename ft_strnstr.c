@@ -6,7 +6,7 @@
 /*   By: tchaves <tchaves@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/13 16:44:12 by tchaves           #+#    #+#             */
-/*   Updated: 2023/10/27 10:55:18 by tchaves          ###   ########.fr       */
+/*   Updated: 2023/10/27 11:17:16 by tchaves          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,6 +28,7 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 		{
 			if (big[i + j] == '\0' && little[j] == '\0')
 				return ((char *)&big[i]);
+			j++;
 		}
 		if (little[j] == '\0')
 			return ((char *)big + i);
