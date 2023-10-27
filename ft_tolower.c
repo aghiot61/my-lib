@@ -6,7 +6,7 @@
 /*   By: tchaves <tchaves@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/10 15:43:02 by tchaves           #+#    #+#             */
-/*   Updated: 2023/10/17 17:14:45 by tchaves          ###   ########.fr       */
+/*   Updated: 2023/10/25 10:42:30 by tchaves          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,10 +20,3 @@ int	ft_tolower(int c)
 	}
 	return (c);
 }
-
-/*#include <ctype.h>
-int     main()
-{
-        printf("%d\n", ft_tolower('a'));
-        printf("%d", tolower('b'));
-}*/

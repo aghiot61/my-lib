@@ -6,7 +6,7 @@
 /*   By: tchaves <tchaves@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/10 15:00:58 by tchaves           #+#    #+#             */
-/*   Updated: 2023/10/17 16:24:19 by tchaves          ###   ########.fr       */
+/*   Updated: 2023/10/25 10:41:23 by tchaves          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,10 +21,3 @@ int	ft_isascii(int c)
 		return (0);
 	}
 }
-
-/*#include <ctype.h>
-int     main()
-{
-        printf("%d\n", ft_isascii(82));
-        printf("%d", isascii(82));
-}*/

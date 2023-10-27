@@ -6,7 +6,7 @@
 /*   By: tchaves <tchaves@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/11 10:25:39 by tchaves           #+#    #+#             */
-/*   Updated: 2023/10/18 13:47:20 by tchaves          ###   ########.fr       */
+/*   Updated: 2023/10/25 10:41:56 by tchaves          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,13 +30,3 @@ void	*ft_memset(void *s, int c, size_t n)
 	}
 	return (s);
 }
-
-/*#include <string.h>
-int     main()
-{
-        char *str;
-
-        str = strdup("testelibft");
-        ft_memset(str, 'a', 5);
-        printf("%s", str);
-}*/

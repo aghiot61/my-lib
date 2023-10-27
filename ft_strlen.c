@@ -6,7 +6,7 @@
 /*   By: tchaves <tchaves@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/11 09:53:18 by tchaves           #+#    #+#             */
-/*   Updated: 2023/10/13 11:58:47 by tchaves          ###   ########.fr       */
+/*   Updated: 2023/10/25 10:42:19 by tchaves          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,8 +23,3 @@ size_t	ft_strlen(const char *s)
 	}
 	return (i);
 }
-
-/*int     main()
-{
-        printf("%ld", ft_strlen("oi"));
-}*/

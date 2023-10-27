@@ -6,7 +6,7 @@
 /*   By: tchaves <tchaves@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/10 13:58:23 by tchaves           #+#    #+#             */
-/*   Updated: 2023/10/23 11:17:18 by tchaves          ###   ########.fr       */
+/*   Updated: 2023/10/25 10:41:12 by tchaves          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,10 +22,3 @@ int	ft_isalnum(int c)
 		return (0);
 	}
 }
-
-/*#include <ctype.h>
-int	main()
-{
-	printf("%d\n", ft_isalnum(67));
-	printf("%d", isalnum(48));
-}*/

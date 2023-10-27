@@ -6,7 +6,7 @@
 /*   By: tchaves <tchaves@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/11 12:14:08 by tchaves           #+#    #+#             */
-/*   Updated: 2023/10/23 10:38:43 by tchaves          ###   ########.fr       */
+/*   Updated: 2023/10/27 10:54:56 by tchaves          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,20 +26,20 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 	d = (unsigned char *)dest;
 	if (!dest && !src)
 		return (NULL);
-	if (dest <= src)
+	if (d < s || d >= s + n)
 	{
 		while (n--)
 		{
 			*d++ = *s++;
 		}
 	}
-	else if (dest > src)
+	else
 	{
-		d += n - 1;
-		s += n - 1;
+		d += n;
+		s += n;
 		while (n--)
 		{
-			*d-- = *s--;
+			*(--d) = *(--s);
 		}
 	}
 	return (dest);

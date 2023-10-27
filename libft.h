@@ -6,7 +6,7 @@
 /*   By: tchaves <tchaves@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/11 10:04:37 by tchaves           #+#    #+#             */
-/*   Updated: 2023/10/24 16:59:13 by tchaves          ###   ########.fr       */
+/*   Updated: 2023/10/25 10:36:43 by tchaves          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,13 +15,6 @@
 
 # include <unistd.h>
 # include <stdlib.h>
-
-typedef struct s_list
-{
-	void			*content;
-	struct s_list	*next;
-}				t_list;
-
 
 int				ft_isalnum(int c);
 int				ft_isalpha(int c);
@@ -59,6 +52,13 @@ size_t			ft_strlcpy(char *dst, const char *src, size_t size);
 size_t			ft_strlen(const char *s);
 
 //Bonus functions
+
+typedef struct s_list
+{
+	void			*content;
+	struct s_list	*next;
+}				t_list;
+
 t_list			*ft_lstnew(void *content);
 void			ft_lstadd_front(t_list **lst, t_list *new);
 int				ft_lstsize(t_list *lst);

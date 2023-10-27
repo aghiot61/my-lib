@@ -6,7 +6,7 @@
 /*   By: tchaves <tchaves@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/17 11:47:28 by tchaves           #+#    #+#             */
-/*   Updated: 2023/10/18 14:54:10 by tchaves          ###   ########.fr       */
+/*   Updated: 2023/10/25 14:55:51 by tchaves          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -61,7 +61,7 @@ char	**ft_split(char const *s, char c)
 	char	**split;
 
 	split = malloc((count_words(s, c) + 1) * sizeof(char *));
-	if (!s || !split)
+	if (!split)
 		return (NULL);
 	i = 0;
 	j = 0;

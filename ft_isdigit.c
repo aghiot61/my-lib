@@ -6,7 +6,7 @@
 /*   By: tchaves <tchaves@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/10 13:39:25 by tchaves           #+#    #+#             */
-/*   Updated: 2023/10/17 16:24:20 by tchaves          ###   ########.fr       */
+/*   Updated: 2023/10/25 10:41:28 by tchaves          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,10 +21,3 @@ int	ft_isdigit(int c)
 		return (0);
 	}
 }
-
-/*#include <ctype.h>
-int main()
-{
-	printf("%d\n", ft_isdigit(48));
-	printf("%d", isdigit(48));
-}*/

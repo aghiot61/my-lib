@@ -6,7 +6,7 @@
 /*   By: tchaves <tchaves@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/10 15:11:35 by tchaves           #+#    #+#             */
-/*   Updated: 2023/10/17 16:25:25 by tchaves          ###   ########.fr       */
+/*   Updated: 2023/10/25 10:41:33 by tchaves          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,10 +21,3 @@ int	ft_isprint(int c)
 		return (0);
 	}
 }
-
-/*#include <ctype.h>
-int     main()
-{
-        printf("%d\n", ft_isprint(33));
-        printf("%d", isprint(31));
-}*/

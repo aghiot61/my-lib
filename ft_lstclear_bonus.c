@@ -6,7 +6,7 @@
 /*   By: tchaves <tchaves@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/24 16:58:11 by tchaves           #+#    #+#             */
-/*   Updated: 2023/10/24 16:58:13 by tchaves          ###   ########.fr       */
+/*   Updated: 2023/10/25 10:34:20 by tchaves          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ void	ft_lstclear(t_list **lst, void (*del)(void *))
 {
 	t_list	*aux;
 
-	if (!lst)
+	if (!lst || !del)
 		return ;
 	while ((*lst) != NULL)
 	{
